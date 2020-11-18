@@ -14,4 +14,20 @@ export class FirebaseService {
     );
     return DocRef.valueChanges();
   }
+  addNews(n: string, l: string, img: string) {
+    let news = {
+      name: n,
+      linl: l,
+      image: img,
+      date: firebase.default.firestore.Timestamp.now()
+    };
+    const ref = this.firestore.collection("news").add(news);
+    ref.then(newRef => {
+      const upDateID = {
+        id: newRef.id
+      };
+      newRef.update(upDateID);
+    });
+    return ref;
+  }
 }

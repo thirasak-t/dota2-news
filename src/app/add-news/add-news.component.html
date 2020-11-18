@@ -1,0 +1,17 @@
+<div class="head">
+	<nav>
+		<a routerLink="/">Add News</a>
+	</nav>
+
+</div>
+<div class='box'>
+	<form [formGroup]="form">
+		<label>Topic</label>
+		<input type="text" formControlName="name"><br>
+		<label>Link</label>
+		<input type="text" formControlName="link"><br>
+		<label>Image</label><br>
+		<textarea cols="28" formControlName="img" ></textarea><br>
+		<input type="submit"  value="Add"(click) = "onNews()"><br>
+	</form>
+</div>

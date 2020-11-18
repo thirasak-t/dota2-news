@@ -18,3 +18,22 @@
   margin: 0 20%;
   background-color: #f3fafd;
 }
+.tap{
+  background-color:#ffffff;
+}
+
+nav{
+  margin: 0 20%;
+  display: flex;
+}
+nav a {
+  padding: 10px 10px;
+  text-decoration: none;
+  color: #1aa3ff;
+  font-size: 20px;
+}
+nav a:hover {
+  background-color:#6dc1e2;
+  color: #ffffff;
+  text-decoration: underline;
+}
