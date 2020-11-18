@@ -35,4 +35,10 @@ export class FirebaseService {
       .doc(id)
       .delete();
   }
+  getNewsByID(id: string) {
+    let DocRef = this.firestore.collection<News>("news", e =>
+      e.where("id", "==", id)
+    );
+    return DocRef.valueChanges();
+  }
 }

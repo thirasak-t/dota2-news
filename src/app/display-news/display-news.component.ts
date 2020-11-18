@@ -52,8 +52,8 @@ export class DisplayNewsComponent implements OnInit {
     return `${diffYear} year(s) ago.`;
   }
   goLink() {
-    alert(this.news.link);
-    this.router.navigate([this.news.link]);
+    alert(this.news.id);
+    this.router.navigate([`/dota2/${this.news.id}`]);
   }
   del() {
     var x = window.prompt("Password");

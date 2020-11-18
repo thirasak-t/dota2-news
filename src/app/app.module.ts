@@ -29,6 +29,7 @@ import { Dota2News00012Component } from "./dota2/dota2-news00012/dota2-news00012
 import { Dota2News00013Component } from "./dota2/dota2-news00013/dota2-news00013.component";
 import { AddNewsComponent } from "./add-news/add-news.component";
 import { Dota2NewsComponent } from "./dota2-news/dota2-news.component";
+import { DisplayComponent } from "./display/display.component";
 //service
 @NgModule({
   imports: [
@@ -75,7 +76,8 @@ import { Dota2NewsComponent } from "./dota2-news/dota2-news.component";
     Dota2News00012Component,
     Dota2News00013Component,
     AddNewsComponent,
-    Dota2NewsComponent
+    Dota2NewsComponent,
+    DisplayComponent
   ],
   bootstrap: [AppComponent],
   providers: [FirebaseService]
