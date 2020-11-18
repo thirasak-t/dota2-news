@@ -10,7 +10,7 @@ import { Router } from "@angular/router";
 export class AddNewsComponent implements OnInit {
   form = new FormGroup({
     name: new FormControl(""),
-    link: new FormControl(""),
+    text: new FormControl(""),
     img: new FormControl(""),
     key: new FormControl("")
   });
@@ -24,7 +24,7 @@ export class AddNewsComponent implements OnInit {
     if (this.form.value.key == "arm") {
       this.firebaseService.addNews(
         this.form.value.name,
-        this.form.value.link,
+        this.form.value.text,
         this.form.value.img
       );
       alert("AddComplete");

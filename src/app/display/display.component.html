@@ -1,6 +1,17 @@
 <div class="head">
 	<nav>
-		<a routerLink="/">Dota 2</a> >
+		<a routerLink="/">Dota 2</a> > {{news.name}}
 	</nav>
-	<div>{{news.name}}</div>
 </div>
+<div class='body'>
+	<div class="date top">{{news.date}}</div>
+	<div class="name top"> {{news.name}}</div>
+	<div class="img">
+		<img
+      class="img-responsive"
+      src="{{news.img}}"
+      alt="Dota2"
+    />
+  </div>
+		<div class='text'>{{news.text}}</div>
+	</div>

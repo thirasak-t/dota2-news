@@ -15,7 +15,4 @@ export class Dota2Component implements OnInit {
       this.dnews = val;
     });
   }
-  show() {
-    alert(this.dnews);
-  }
 }

@@ -20,14 +20,7 @@
   display: flex;
   justify-content: space-between;
 }
-nav a {
-  text-decoration: none;
-  color: blue;
-}
-nav a:hover {
-  color: blue;
-  text-decoration: underline;
-}
+
 .date {
   color: gray;
 }
