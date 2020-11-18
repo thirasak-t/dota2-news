@@ -5,13 +5,15 @@
 
 </div>
 <div class='box'>
-	<form [formGroup]="form">
-		<label>Topic</label>
-		<input type="text" formControlName="name"><br>
-		<label>Link</label>
-		<input type="text" formControlName="link"><br>
-		<label>Image</label><br>
-		<textarea cols="28" formControlName="img" ></textarea><br>
+	<form>
+		<label class = 'a'>Topic: </label>
+		<input class = 'a' type="text" formControlName="name"size ='19'><br>
+		<label class = 'a'> Link: </label>
+		<input class = 'a' type="text" formControlName="link"size ='20'><br>
+		<label class = 'a'>Image address: </label><br>
+		<textarea class = 'a' cols="28" formControlName="img" ></textarea><br>
+		<label class = 'a'>Password: </label>
+		<input class = 'a' type="text" formControlName="key" size ='16'><br>
 		<input type="submit"  value="Add"(click) = "onNews()"><br>
 	</form>
 </div>
