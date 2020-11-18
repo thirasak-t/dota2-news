@@ -28,6 +28,7 @@ import { Dota2News00011Component } from "./dota2/dota2-news00011/dota2-news00011
 import { Dota2News00012Component } from "./dota2/dota2-news00012/dota2-news00012.component";
 import { Dota2News00013Component } from "./dota2/dota2-news00013/dota2-news00013.component";
 import { AddNewsComponent } from "./add-news/add-news.component";
+import { Dota2NewsComponent } from "./dota2-news/dota2-news.component";
 //service
 @NgModule({
   imports: [
@@ -48,7 +49,8 @@ import { AddNewsComponent } from "./add-news/add-news.component";
       { path: "dota2-00011", component: Dota2News00011Component },
       { path: "dota2-00012", component: Dota2News00012Component },
       { path: "dota2-00013", component: Dota2News00013Component },
-      { path: "add-news", component: AddNewsComponent }
+      { path: "add-news", component: AddNewsComponent },
+      { path: "dota2/:id", component: Dota2NewsComponent }
     ]),
     ReactiveFormsModule,
     AngularFireModule.initializeApp(enviroment.firebaseConfig)
@@ -72,7 +74,8 @@ import { AddNewsComponent } from "./add-news/add-news.component";
     Dota2News00011Component,
     Dota2News00012Component,
     Dota2News00013Component,
-    AddNewsComponent
+    AddNewsComponent,
+    Dota2NewsComponent
   ],
   bootstrap: [AppComponent],
   providers: [FirebaseService]

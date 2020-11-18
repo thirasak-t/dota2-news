@@ -2,13 +2,17 @@ import { Component, OnInit } from "@angular/core";
 import { Input } from "@angular/core";
 import { News } from "../news";
 import { FirebaseService } from "../firebase.service";
+import { Router } from "@angular/router";
 @Component({
   selector: "app-display-news",
   templateUrl: "./display-news.component.html",
   styleUrls: ["./display-news.component.css"]
 })
 export class DisplayNewsComponent implements OnInit {
-  constructor(private firebaseService: FirebaseService) {}
+  constructor(
+    private firebaseService: FirebaseService,
+    private router: Router
+  ) {}
   @Input() news: News;
 
   ngOnInit() {
@@ -46,6 +50,10 @@ export class DisplayNewsComponent implements OnInit {
       return `${diffMonth} month(s) ago.`;
     }
     return `${diffYear} year(s) ago.`;
+  }
+  goLink() {
+    alert(this.news.link);
+    this.router.navigate([this.news.link]);
   }
   del() {
     var x = window.prompt("Password");

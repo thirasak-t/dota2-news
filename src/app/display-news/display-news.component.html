@@ -13,8 +13,9 @@
 			<div class="head">{{news.name}}</div>
 			<br />
 			<div class="a">
+				<div><button (click) = "goLink()">อ่านต่อ</button></div>
 				<nav>
-					<a routerLink="{{news.link}}">อ่านต่อ...</a>
+					<a routerLink="{{news.link}}" (cleck)="goLink()">อ่านต่อ...</a>
 				</nav>
 				<div class="date">{{news.date}}</div>
 			</div>
