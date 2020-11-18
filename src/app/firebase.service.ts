@@ -6,7 +6,6 @@ import { News } from "./news";
 
 @Injectable({ providedIn: "root" })
 export class FirebaseService {
-
   constructor(private firestore: AngularFirestore) {}
   getNews() {
     let DocRef = this.firestore.collection<News>("news", e =>
@@ -29,5 +28,11 @@ export class FirebaseService {
       newRef.update(upDateID);
     });
     return ref;
+  }
+  deleteNews(id: string) {
+    return this.firestore
+      .collection("news")
+      .doc(id)
+      .delete();
   }
 }

@@ -71,7 +71,8 @@ import { AddNewsComponent } from "./add-news/add-news.component";
     Dota2News00010Component,
     Dota2News00011Component,
     Dota2News00012Component,
-    Dota2News00013Component
+    Dota2News00013Component,
+    AddNewsComponent
   ],
   bootstrap: [AppComponent],
   providers: [FirebaseService]

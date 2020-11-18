@@ -1,6 +1,7 @@
 <div class="content">
-  <div class="img news">
-    <img
+
+	<div class="img news">
+		<img
       class="img-responsive"
       src="{{news.img}}"
       alt="Dota2"
@@ -8,15 +9,15 @@
       height="175"
     />
   </div>
-
-  <div class="text news">
-    <div class="head">{{news.name}}</div>
-    <br />
-    <div class="a">
-      <nav>
-        <a routerLink="{{news.link}}">อ่านต่อ...</a>
-      </nav>
-      <div class="date">{{news.date}}</div>
-    </div>
-  </div>
-</div>
+		<div class="text news">
+			<div class="head">{{news.name}}</div>
+			<br />
+			<div class="a">
+				<nav>
+					<a routerLink="{{news.link}}">อ่านต่อ...</a>
+				</nav>
+				<div class="date">{{news.date}}</div>
+			</div>
+		</div>
+		<div><button (click) = "del()">x</button></div>
+	</div>

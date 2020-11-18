@@ -47,4 +47,19 @@ export class DisplayNewsComponent implements OnInit {
     }
     return `${diffYear} year(s) ago.`;
   }
+  del() {
+    var x = window.prompt("Password");
+    if (x == "arm") {
+      this.firebaseService
+        .deleteNews(this.news.id)
+        .then(() => {
+          alert("deleteComplete");
+        })
+        .catch(err => {
+          alert("deleteFailure");
+        });
+    } else if (x != null) {
+      alert("Wrong password");
+    }
+  }
 }

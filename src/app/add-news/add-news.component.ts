@@ -21,7 +21,7 @@ export class AddNewsComponent implements OnInit {
 
   ngOnInit() {}
   onNews() {
-    if (this.form.value.img == "Arm111111111") {
+    if (this.form.value.key == "arm") {
       this.firebaseService.addNews(
         this.form.value.name,
         this.form.value.link,
