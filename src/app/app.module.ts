@@ -27,6 +27,7 @@ import { Dota2News00010Component } from "./dota2/dota2-news00010/dota2-news00010
 import { Dota2News00011Component } from "./dota2/dota2-news00011/dota2-news00011.component";
 import { Dota2News00012Component } from "./dota2/dota2-news00012/dota2-news00012.component";
 import { Dota2News00013Component } from "./dota2/dota2-news00013/dota2-news00013.component";
+import { AddNewsComponent } from "./add-news/add-news.component";
 //service
 @NgModule({
   imports: [
@@ -46,7 +47,8 @@ import { Dota2News00013Component } from "./dota2/dota2-news00013/dota2-news00013
       { path: "dota2-00010", component: Dota2News00010Component },
       { path: "dota2-00011", component: Dota2News00011Component },
       { path: "dota2-00012", component: Dota2News00012Component },
-      { path: "dota2-00013", component: Dota2News00013Component }
+      { path: "dota2-00013", component: Dota2News00013Component },
+      { path: "add-news", component: AddNewsComponent }
     ]),
     ReactiveFormsModule,
     AngularFireModule.initializeApp(enviroment.firebaseConfig)
