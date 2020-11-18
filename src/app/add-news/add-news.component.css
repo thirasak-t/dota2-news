@@ -12,3 +12,14 @@ nav a:hover {
   display: flex;
   padding: 10px;
 }
+.box {
+  background-color: white;
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 0px 25%;
+}
+.a{
+  margin: 5px 0;
+}

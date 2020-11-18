@@ -2,16 +2,18 @@
 	<nav>
 		<a routerLink="/">Add News</a>
 	</nav>
-
 </div>
 <div class='box'>
 	<form [formGroup]="form">
-		<label>Topic</label>
-		<input type="text" formControlName="name"><br>
-		<label>Link</label>
-		<input type="text" formControlName="link"><br>
-		<label>Image</label><br>
-		<textarea cols="28" formControlName="img" ></textarea><br>
-		<input type="submit"  value="Add"(click) = "onNews()"><br>
+		<label  class = "a" >Topic:</label>
+		<input class = "a" type="text" formControlName="name" size="20" ><br>
+		<label class = "a">Link: </label>
+		<input class = "a"  type="text" formControlName="link" size="20"><br>
+		<label   class = "a">Image</label><br>
+		<textarea class = "a" cols="28" formControlName="img" ></textarea><br>
+
+		<label class = "a">password: </label>
+		<input  class = "a" type="text" formControlName="key" size="16"><br>
+		<input class = "a" type="submit"  value="Add"(click) = "onNews()"><br>
 	</form>
 </div>

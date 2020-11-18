@@ -7,11 +7,12 @@ import { Router } from "@angular/router";
   templateUrl: "./add-news.component.html",
   styleUrls: ["./add-news.component.css"]
 })
-export class AddTweetComponent implements OnInit {
+export class AddNewsComponent implements OnInit {
   form = new FormGroup({
     name: new FormControl(""),
     link: new FormControl(""),
-    img: new FormControl("")
+    img: new FormControl(""),
+    key: new FormControl("")
   });
   constructor(
     private firebaseService: FirebaseService,
@@ -20,11 +21,16 @@ export class AddTweetComponent implements OnInit {
 
   ngOnInit() {}
   onNews() {
-    this.firebaseService.addNews(
-      this.form.value.name,
-      this.form.value.link,
-      this.form.value.img
-    );
-    this.router.navigate(["/"]);
+    if (this.form.value.key == "Mr.A") {
+      this.firebaseService.addNews(
+        this.form.value.name,
+        this.form.value.link,
+        this.form.value.img
+      );
+      alert("AddComplete");
+      this.router.navigate(["/"]);
+    } else {
+      alert("Wrong password");
+    }
   }
 }
