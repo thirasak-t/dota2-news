@@ -1,0 +1,14 @@
+nav a {
+  text-decoration: none;
+  color: #1aa3ff;
+  font-size: 20px;
+}
+nav a:hover {
+  color: #1aa3ff;
+  text-decoration: underline;
+}
+.head {
+  color: #1aa3ff;
+  display: flex;
+  padding: 10px;
+}

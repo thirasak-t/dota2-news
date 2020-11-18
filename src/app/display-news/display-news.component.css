@@ -1,0 +1,29 @@
+.head {
+  font-size: 25px;
+}
+.content {
+  display: flex;
+  margin: 10px 100px;
+  border-radius: 10px;
+  padding: 20px 75px;
+  background-color: #a7b0b89c;
+}
+.a {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+nav a {
+  text-decoration: none;
+  color: blue;
+}
+nav a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+.date {
+  color: gray;
+}
+.news {
+  margin: 10px;
+}
