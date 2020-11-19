@@ -1,9 +1,10 @@
 .content {
-  background-color: #f4fbff;
-  border: 1px solid #69bcf3;
+  background-color: #fdf6f6;
+  border: 1px solid #541212;
   border-radius: 10px;
   padding: 10px;
   margin: 15px;
+  color: #ab0303;
 }
 .head{
   display: flex;

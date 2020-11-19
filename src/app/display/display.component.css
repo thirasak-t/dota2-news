@@ -54,4 +54,17 @@ nav a:hover {
 .c {
   display: flex;
   justify-content: center;
+
+  padding: 15px;
+}
+.c div {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  color: #a70606;
+  background-color: #fdf6f6;
+  font-size: 25px;
+  width: 150px;
+  border: 1px solid #541212;
+  border-radius: 25px;
 }

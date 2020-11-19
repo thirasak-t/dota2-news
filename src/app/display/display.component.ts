@@ -15,6 +15,8 @@ export class DisplayComponent implements OnInit {
   t: string;
   x: boolean;
   comment: Comment[];
+  list_b: any[];
+  list_c: any[];
   constructor(
     private firebaseService: FirebaseService,
     private router: Router
@@ -22,20 +24,35 @@ export class DisplayComponent implements OnInit {
     this.x = true;
   }
   @Input() news: News;
-
   ngOnInit() {
     this.news = {
       ...this.news,
       date: this.timeAgo(this.news.date.toDate())
     };
+
+    this.firebaseService.getComment().subscribe(val => {
+      this.comment = val;
+      for (var i = 0; i < val.length; i++) {
+        if (val[i].id_news == this.news.id) {
+          this.list_c.push(this.comment[i]);
+        }
+      }
+    });
     if (this.x) {
       this.str = this.news.text;
+      this.list_b = this.comment;
       this.a();
       this.x = false;
     }
-    this.firebaseService.getComment().subscribe(val => {
-      this.comment = val;
-    });
+  }
+  b() {
+    this.list_c = [];
+
+    for (var i = 0; i < this.comment.length; i++) {
+      if (this.comment[i].id_news == this.news.id) {
+        this.list_c.push(this.comment[i]);
+      }
+    }
   }
   a() {
     this.t = "";

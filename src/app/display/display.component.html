@@ -26,14 +26,15 @@
 	<div class='ds'>
 		<div>ที่มา: {{news.dataSource}}</div>
 	</div>
-	<div class ='c'>
+
+	<div class='c'>
 		<div>Comment</div>
 	</div>
 	<div class="add_c">
 		<app-add-comment [news]="news"></app-add-comment>
 	</div>
 	<div class='comment'>
-		<div class="content" *ngFor="let cm of comment">
+		<div class="content" *ngFor="let cm of list_c">
 			<app-display-comment [comment]="cm"></app-display-comment>
 		</div>
 	</div>
