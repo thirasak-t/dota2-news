@@ -22,11 +22,6 @@ export class AddCommentComponent implements OnInit {
   ) {}
 
   ngOnInit() {}
-  fileChange(e) {
-    const file = e.srcElement.files[0];
-    this.imgsrc = window.URL.createObjectURL(file);
-    this.form.value.img = this.imgsrc;
-  }
   onComment() {
     this.firebaseService.addComment(
       this.form.value.name,

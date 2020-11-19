@@ -19,15 +19,11 @@ export class ReportProblemComponent implements OnInit {
   ) {}
   ngOnInit() {}
   onProblem() {
-    if (this.form.value.key == "arm") {
-      this.firebaseService.addReport(
-        this.form.value.topic,
-        this.form.value.problem
-      );
-      alert("AddComplete");
-      this.router.navigate(["/"]);
-    } else {
-      alert("Wrong password");
-    }
+    this.firebaseService.addReport(
+      this.form.value.topic,
+      this.form.value.problem
+    );
+    alert("AddComplete");
+    this.router.navigate(["/"]);
   }
 }

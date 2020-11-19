@@ -43,9 +43,9 @@ import { DisplayCommentComponent } from "./display-comment/display-comment.compo
     AddNewsComponent,
     Dota2NewsComponent,
     DisplayComponent,
-    ReportProblemComponent,
     AddCommentComponent,
-    DisplayCommentComponent
+    DisplayCommentComponent,
+    ReportProblemComponent
   ],
   bootstrap: [AppComponent],
   providers: [FirebaseService]
