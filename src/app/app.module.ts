@@ -26,7 +26,7 @@ import { ReportProblemComponent } from "./report-problem/report-problem.componen
     RouterModule.forRoot([
       { path: "", component: Dota2Component },
       { path: "add-news", component: AddNewsComponent },
-      { path: "report-problem", component: ReportProblemComponent },
+      { path: "report", component: ReportProblemComponent },
       { path: "dota2/:id", component: Dota2NewsComponent }
     ]),
     ReactiveFormsModule,
