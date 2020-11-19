@@ -3,17 +3,17 @@
 }
 .head {
   background-color: #b71c1c;
-  color: #DCDADA;
+  color: #dcdada;
   display: flex;
   justify-content: center;
-  padding: 50px 0;
+  padding: 20px 0;
 }
 .body {
   display: flex;
   justify-content: center;
 }
 .a {
-  font-size: 50px;
+  font-size: 75px;
   padding: 10px 0;
   display: flex;
 }
@@ -32,11 +32,11 @@ nav {
 nav a {
   padding: 10px 10px;
   text-decoration: none;
-  color: #EEAEAA;
+  color: #eeaeaa;
   font-size: 20px;
 }
 nav a:hover {
   background-color: #b71c1c;
-  color: #DCDADA;
+  color: #dcdada;
   text-decoration: underline;
 }
