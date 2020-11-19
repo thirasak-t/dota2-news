@@ -11,16 +11,18 @@
 .body {
   display: flex;
   justify-content: center;
-  
 }
 .dota2 {
   padding: 10px 10px;
   color: #b71c1c;
   font-size: 20px;
   background-color: #dcdada;
-  
 }
-.img{
+.mid {
+  background-color: #db5757;
+  padding: 10px 0;
+}
+.img {
   margin: 0 10px;
 }
 .a {
@@ -32,7 +34,7 @@
   width: 1280px;
   background-color: #fae6e6;
 }
-.active-link{
+.active-link {
   background-color: #b71c1c;
   color: #dcdada;
 }
