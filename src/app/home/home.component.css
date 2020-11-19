@@ -32,6 +32,10 @@
   width: 1280px;
   background-color: #fae6e6;
 }
+.active-link{
+  background-color: #b71c1c;
+  color: #dcdada;
+}
 .tap {
   display: flex;
   background-color: #2e2c2c;
