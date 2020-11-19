@@ -1,0 +1,16 @@
+<div class="head">
+	<nav>
+		<a routerLink="/">Report</a>
+	</nav>
+
+</div>
+<div class='box'>
+	<form [formGroup]="form">
+		<label class = 'a'>Topic: </label><br>
+		<textarea class = 'a' cols="80" rows="3" formControlName="topic"></textarea><br>
+		<label class = 'a'>Problem: </label><br>
+		<textarea class = 'a' cols="80" rows="20" formControlName="problem"></textarea><br
+
+		<input type="submit"  value="Add"(click) = "onProblem()"><br>
+	</form>
+</div>

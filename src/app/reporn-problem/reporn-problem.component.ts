@@ -9,11 +9,8 @@ import { Router } from "@angular/router";
 })
 export class RepornProblemComponent implements OnInit {
   form = new FormGroup({
-    name: new FormControl(""),
-    text: new FormControl(""),
-    img: new FormControl(""),
-    dataSource: new FormControl(""),
-    key: new FormControl("")
+    topic: new FormControl(""),
+    problem: new FormControl(""),
   });
   imgsrc = "";
   constructor(
@@ -22,5 +19,18 @@ export class RepornProblemComponent implements OnInit {
   ) {}
   ngOnInit() {
   }
-
+  onProblem() {
+    if (this.form.value.key == "arm") {
+      this.firebaseService.addNews(
+        this.form.value.name,
+        this.form.value.text,
+        this.form.value.img,
+        this.form.value.dataSource
+      );
+      alert("AddComplete");
+      this.router.navigate(["/"]);
+    } else {
+      alert("Wrong password");
+    }
+  }
 }
