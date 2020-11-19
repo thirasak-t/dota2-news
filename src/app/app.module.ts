@@ -27,7 +27,7 @@ import { RepornProblemComponent } from "./reporn-problem/reporn-problem.componen
       { path: "", component: Dota2Component },
       { path: "add-news", component: AddNewsComponent },
       { path: "dota2/:id", component: Dota2NewsComponent },
-      { path: "report", component: RepornProblemComponent }
+      { path: "report-problem", component: RepornProblemComponent }
     ]),
     ReactiveFormsModule,
     AngularFireModule.initializeApp(enviroment.firebaseConfig)
