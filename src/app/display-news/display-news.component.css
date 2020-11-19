@@ -1,12 +1,7 @@
 .head {
   font-size: 25px;
 }
-.img {
-  width: 32%;
-}
-.text {
-  width: 68%;
-}
+
 .content {
   display: flex;
   margin: 10px 100px;

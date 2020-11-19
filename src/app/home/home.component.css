@@ -5,25 +5,23 @@
   background-color: #86d0f0;
   display: flex;
   justify-content: center;
-  margin: 0 20%;
-  padding: 50px;
+  padding: 50px 0;
 }
 .a {
   font-size: 50px;
-  margin: 0 20%;
   padding: 10px 0;
   display: flex;
 }
-.content{
-  margin: 0 20%;
+.content {
+  width: 60%;
   background-color: #f3fafd;
 }
-.tap{
-  background-color:#ffffff;
+.tap {
+  background-color: #ffffff;
 }
 
-nav{
-  margin: 0 20%;
+nav {
+  margin: 0 400px;
   display: flex;
 }
 nav a {
@@ -33,7 +31,7 @@ nav a {
   font-size: 20px;
 }
 nav a:hover {
-  background-color:#6dc1e2;
+  background-color: #6dc1e2;
   color: #ffffff;
   text-decoration: underline;
 }
