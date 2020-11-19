@@ -1,6 +1,6 @@
 /* Add application styles & imports to this file! */
-@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap" rel="stylesheet");
-body{
-  font-family: 'Prompt',sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap");
+body {
+  font-family: "Prompt", sans-serif;
   margin: 0;
 }
