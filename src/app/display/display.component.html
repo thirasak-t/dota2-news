@@ -13,5 +13,7 @@
       alt="Dota2"
     />
   </div>
-		<div class='text'>{{news.text}}</div>
+		<div class='text' *ngFor="let t of list">
+			{{t}}
+		</div>
 	</div>

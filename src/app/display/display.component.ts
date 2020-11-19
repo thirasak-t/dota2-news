@@ -10,10 +10,16 @@ import { Router } from "@angular/router";
   styleUrls: ["./display.component.css"]
 })
 export class DisplayComponent implements OnInit {
+  str: string;
+  list: any[];
+  t: string;
+  x: boolean;
   constructor(
     private firebaseService: FirebaseService,
     private router: Router
-  ) {}
+  ) {
+    this.x = true;
+  }
   @Input() news: News;
 
   ngOnInit() {
@@ -21,7 +27,29 @@ export class DisplayComponent implements OnInit {
       ...this.news,
       date: this.timeAgo(this.news.date.toDate())
     };
+    if (this.x) {
+      this.str = this.news.text;
+      this.a();
+      this.x = false;
+    }
   }
+
+  convertDate() {}
+
+  a() {
+    this.t = "";
+    this.list = [];
+    for (var i = 0; i < this.str.length; i++) {
+      if (this.str[i] != "$") {
+        this.t += this.str[i];
+      } else {
+        this.list.push(this.t);
+        this.t = "";
+      }
+    }
+    //return this.list;
+  }
+
   timeAgo(val: Date) {
     const now = new Date();
     const diff = Math.abs(now.getTime() - val.getTime());
