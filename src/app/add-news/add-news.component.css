@@ -1,24 +1,25 @@
 nav a {
   text-decoration: none;
-  color: #1aa3ff;
+  color: #911d1d;
 }
 nav a:hover {
-  color: #1aa3ff;
+  color: #911d1d;
   text-decoration: underline;
 }
 .head {
-  color: #1aa3ff;
+  color: #871d1d;
   display: flex;
   padding: 10px;
 }
 .box {
-  background-color: white;
-  border: 1px solid blue;
+  background-color: fdf6f6;
+  border: 1px solid #541212;
   display: flex;
   justify-content: center;
   padding: 20px;
   margin: 0px 180px;
 }
 .a {
+  color: #320b0b;
   margin: 10px 0px;
 }

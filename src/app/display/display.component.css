@@ -1,13 +1,13 @@
 nav a {
   text-decoration: none;
-  color: #1aa3ff;
+  color: #911d1d;
 }
 nav a:hover {
-  color: #1aa3ff;
+  color: #911d1d;
   text-decoration: underline;
 }
 .head {
-  color: #1aa3ff;
+  color: #871d1d;
   display: flex;
   padding: 10px;
 }
@@ -15,10 +15,11 @@ nav a:hover {
   margin: 50px;
 }
 .date {
-  color: red;
+  color: #541212;
+  font-size: 25px;
 }
 .name {
-  color: #2e2b2b;
+  color: #541212;
   font-size: 50px;
 }
 .top {
@@ -27,6 +28,7 @@ nav a:hover {
 .text {
   margin: 20px 50px;
   font-size: 23px;
+  color: #8a1919;
 }
 .img {
   display: flex;
@@ -35,5 +37,5 @@ nav a:hover {
 
 .ds {
   margin: 50px 150px;
-  color: blue;
+  color: #541212;
 }
