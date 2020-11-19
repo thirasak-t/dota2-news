@@ -27,3 +27,7 @@
 .btn-cover {
   margin-left: auto;
 }
+
+.text {
+  flex: 1;
+}
