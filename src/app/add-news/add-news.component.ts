@@ -24,7 +24,7 @@ export class AddNewsComponent implements OnInit {
 
   ngOnInit() {}
   onNews() {
-    if (this.form.value.key == "arm") {
+    if (this.form.value.key == "dota2news") {
       this.firebaseService.addNews(
         this.form.value.name,
         this.form.value.text,

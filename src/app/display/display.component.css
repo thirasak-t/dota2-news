@@ -40,3 +40,11 @@ nav a:hover {
   margin: 50px 150px;
   color: #541212;
 }
+.add_c {
+  padding: 50px 0;
+}
+.content{
+  background-color: #fdf6f6;
+  margin: 0px, 10px;
+  padding: 5px 200px;
+}

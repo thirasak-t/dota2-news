@@ -56,7 +56,7 @@ export class DisplayNewsComponent implements OnInit {
   }
   del() {
     var x = window.prompt("Password");
-    if (x == "arm") {
+    if (x == "dota2news") {
       this.firebaseService
         .deleteNews(this.news.id)
         .then(() => {
