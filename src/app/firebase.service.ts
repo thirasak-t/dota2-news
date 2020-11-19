@@ -3,7 +3,8 @@ import { AngularFirestore } from "@angular/fire/firestore";
 import { AngularFireStorage } from "@angular/fire/storage";
 import * as firebase from "firebase/app";
 import { News } from "./news";
-
+import { Report } from "./report";
+import { Comment } from "./ comment";
 @Injectable({ providedIn: "root" })
 export class FirebaseService {
   constructor(private firestore: AngularFirestore) {}
