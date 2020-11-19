@@ -1,8 +1,9 @@
 .Home {
-  background-color: #d4ecf8;
+  background-color: #ffb7b7;
 }
 .head {
-  background-color: #86d0f0;
+  background-color: #b71c1c;
+  color: #DCDADA;
   display: flex;
   justify-content: center;
   padding: 50px 0;
@@ -22,7 +23,7 @@
 }
 .tap {
   display: flex;
-  background-color: #1a1a1a;
+  background-color: #2e2c2c;
 }
 
 nav {
@@ -31,11 +32,11 @@ nav {
 nav a {
   padding: 10px 10px;
   text-decoration: none;
-  color: #1aa3ff;
+  color: #EEAEAA;
   font-size: 20px;
 }
 nav a:hover {
-  background-color: #6dc1e2;
-  color: #ffffff;
+  background-color: #b71c1c;
+  color: #DCDADA;
   text-decoration: underline;
 }
