@@ -1,56 +1,26 @@
 import { Component, OnInit } from "@angular/core";
 import { Input } from "@angular/core";
-import { News } from "../news";
+import { Comment } from "../comment";
 import { FirebaseService } from "../firebase.service";
 import { Router } from "@angular/router";
-import { Comment } from "../comment";
 @Component({
-  selector: "app-display",
-  templateUrl: "./display.component.html",
-  styleUrls: ["./display.component.css"]
+  selector: 'app-display-comment',
+  templateUrl: './display-comment.component.html',
+  styleUrls: ['./display-comment.component.css']
 })
-export class DisplayComponent implements OnInit {
-  str: string;
-  list: any[];
-  t: string;
-  x: boolean;
-  comment: Comment[];
+export class DisplayCommentComponent implements OnInit {
+
   constructor(
     private firebaseService: FirebaseService,
     private router: Router
-  ) {
-    this.x = true;
-  }
-  @Input() news: News;
-
+  ) {}
+  @Input() comment: Comment;
   ngOnInit() {
-    this.news = {
-      ...this.news,
-      date: this.timeAgo(this.news.date.toDate())
+    this.comment = {
+      ...this.comment,
+      date: this.timeAgo(this.comment.date.toDate())
     };
-    if (this.x) {
-      this.str = this.news.text;
-      this.a();
-      this.x = false;
-    }
   }
-
-  convertDate() {}
-
-  a() {
-    this.t = "";
-    this.list = [];
-    for (var i = 0; i < this.str.length; i++) {
-      if (this.str[i] != "$") {
-        this.t += this.str[i];
-      } else {
-        this.list.push(this.t);
-        this.t = "";
-      }
-    }
-    //return this.list;
-  }
-
   timeAgo(val: Date) {
     const now = new Date();
     const diff = Math.abs(now.getTime() - val.getTime());
@@ -80,5 +50,17 @@ export class DisplayComponent implements OnInit {
       return `${diffMonth} month(s) ago.`;
     }
     return `${diffYear} year(s) ago.`;
+  }
+  del() {
+    if (window.confirm("confirm")) {
+      this.firebaseService
+        .deleteComment(this.comment.id)
+        .then(() => {
+          alert("deleteComplete");
+        })
+        .catch(err => {
+          alert("deleteFailure");
+        });
+    }
   }
 }

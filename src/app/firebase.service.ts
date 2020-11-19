@@ -51,7 +51,7 @@ export class FirebaseService {
     );
     return DocRef.valueChanges();
   }
-  deletComment(id: string) {
+  deleteComment(id: string) {
     return this.firestore
       .collection("comment")
       .doc(id)

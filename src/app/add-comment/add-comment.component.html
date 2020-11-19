@@ -1,0 +1,10 @@
+<div class='box'>
+	<form [formGroup]="form">
+		<label class = 'a'>Name: </label><br>
+		<textarea class = 'a' cols="80" rows="3" formControlName="name"></textarea><br>
+		<label class = 'a'>Text: </label><br>
+		<textarea class = 'a' cols="80" rows="20" formControlName="text"></textarea><br>
+		<input type="submit"  value="Add" (click) = "onComment()"><br>
+		<button (click) = "onComment()">x</button>
+	</form>
+</div>

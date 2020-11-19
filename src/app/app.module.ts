@@ -18,6 +18,8 @@ import { AddNewsComponent } from "./add-news/add-news.component";
 import { Dota2NewsComponent } from "./dota2-news/dota2-news.component";
 import { DisplayComponent } from "./display/display.component";
 import { ReportProblemComponent } from "./report-problem/report-problem.component";
+import { AddCommentComponent } from "./add-comment/add-comment.component";
+import { DisplayCommentComponent } from "./display-comment/display-comment.component";
 //service
 @NgModule({
   imports: [
@@ -41,7 +43,9 @@ import { ReportProblemComponent } from "./report-problem/report-problem.componen
     AddNewsComponent,
     Dota2NewsComponent,
     DisplayComponent,
-    ReportProblemComponent
+    ReportProblemComponent,
+    AddCommentComponent,
+    DisplayCommentComponent
   ],
   bootstrap: [AppComponent],
   providers: [FirebaseService]
