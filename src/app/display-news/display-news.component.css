@@ -13,6 +13,7 @@
 .a {
   font-size: 20px;
   display: flex;
+
   justify-content: space-between;
 }
 
@@ -21,4 +22,8 @@
 }
 .news {
   margin: 10px;
+}
+
+.btn-cover {
+  margin-left: auto;
 }
