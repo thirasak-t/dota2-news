@@ -11,12 +11,17 @@
 .body {
   display: flex;
   justify-content: center;
+  
 }
 .dota2 {
   padding: 10px 10px;
   color: #b71c1c;
   font-size: 20px;
   background-color: #dcdada;
+  
+}
+.img{
+  margin: 0 10px;
 }
 .a {
   font-size: 75px;
