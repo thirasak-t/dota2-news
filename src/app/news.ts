@@ -4,4 +4,5 @@ export class News {
   name: string;
   date: any;
   text: string;
+  dataSource: string;
 }

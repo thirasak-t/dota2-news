@@ -11,25 +11,29 @@ nav a:hover {
   display: flex;
   padding: 10px;
 }
-.body{
+.body {
   margin: 50px;
 }
-.date{
+.date {
   color: red;
 }
-.name{
+.name {
   color: #2e2b2b;
   font-size: 50px;
 }
-.top{
+.top {
   margin: 20px 0;
 }
-.text{
+.text {
   margin: 20px 50px;
   font-size: 25px;
 }
-.img{
+.img {
   display: flex;
   justify-content: center;
 }
 
+.ds {
+  margin: 50px 150px;
+  color: blue;
+}

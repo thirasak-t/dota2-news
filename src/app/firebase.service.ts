@@ -13,11 +13,12 @@ export class FirebaseService {
     );
     return DocRef.valueChanges();
   }
-  addNews(n: string, t: string, image: string) {
+  addNews(n: string, t: string, image: string, ds:string) {
     let news = {
       name: n,
       text: t,
       img: image,
+      dataSource: ds,
       date: firebase.default.firestore.Timestamp.now()
     };
     const ref = this.firestore.collection("news").add(news);

@@ -12,6 +12,7 @@ export class AddNewsComponent implements OnInit {
     name: new FormControl(""),
     text: new FormControl(""),
     img: new FormControl(""),
+    dataSource: new FormControl(""),
     key: new FormControl("")
   });
   constructor(
@@ -25,7 +26,8 @@ export class AddNewsComponent implements OnInit {
       this.firebaseService.addNews(
         this.form.value.name,
         this.form.value.text,
-        this.form.value.img
+        this.form.value.img,
+        this.form.value.dataSource
       );
       alert("AddComplete");
       this.router.navigate(["/"]);
