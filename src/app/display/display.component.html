@@ -30,5 +30,6 @@
 		<app-add-comment></app-add-comment>
 	</div>
 	<div class='com' *ngFor="let cm of comment">
+		<app-display-comment></app-display-comment>
 		<app-display-comment [comment]="cm"></app-display-comment>
 	</div>
