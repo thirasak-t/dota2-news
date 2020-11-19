@@ -27,6 +27,7 @@ export class AddCommentComponent implements OnInit {
       this.form.value.text,
       this.news.id
     );
+    this.router.navigate(["/dota2/" + this.news.id]);
     alert("addComplete");
   }
 }

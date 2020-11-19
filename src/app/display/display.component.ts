@@ -32,6 +32,7 @@ export class DisplayComponent implements OnInit {
 
     this.firebaseService.getComment().subscribe(val => {
       this.comment = val;
+      this.list_c = [];
       for (var i = 0; i < val.length; i++) {
         if (val[i].id_news == this.news.id) {
           this.list_c.push(this.comment[i]);
