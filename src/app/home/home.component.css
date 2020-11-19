@@ -1,5 +1,5 @@
 .Home {
-  background-color: #ffb7b7;
+  background-color: #f2bebb;
 }
 .head {
   background-color: #b71c1c;
@@ -12,6 +12,12 @@
   display: flex;
   justify-content: center;
 }
+.dota2 {
+  padding: 10px 10px;
+  color: #b71c1c;
+  font-size: 20px;
+  background-color: #dcdada;
+}
 .a {
   font-size: 75px;
   padding: 10px 0;
@@ -19,7 +25,7 @@
 }
 .content {
   width: 1280px;
-  background-color: #f3fafd;
+  background-color: #fae6e6;
 }
 .tap {
   display: flex;
