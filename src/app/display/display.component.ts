@@ -33,10 +33,10 @@ export class DisplayComponent implements OnInit {
       this.a();
       this.x = false;
     }
+    this.firebaseService.getComment().subscribe(val => {
+      this.comment = val;
+    });
   }
-
-  convertDate() {}
-
   a() {
     this.t = "";
     this.list = [];
@@ -48,6 +48,7 @@ export class DisplayComponent implements OnInit {
         this.t = "";
       }
     }
+
     //return this.list;
   }
 

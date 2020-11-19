@@ -20,9 +20,7 @@ export class AddCommentComponent implements OnInit {
     private router: Router
   ) {}
 
-  ngOnInit() {
-    alert(this.news.id);
-  }
+  ngOnInit() {}
   onComment() {
     this.firebaseService.addComment(
       this.form.value.name,

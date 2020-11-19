@@ -1,5 +1,6 @@
 .Home {
   background-color: #f2bebb;
+  margin: auto;
 }
 .head {
   background-color: #b71c1c;
@@ -31,6 +32,7 @@
   display: flex;
 }
 .content {
+  margin: 0 0px;
   width: 1280px;
   background-color: #fae6e6;
 }
