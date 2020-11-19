@@ -1,5 +1,7 @@
 .head {
   font-size: 25px;
+  color: #ab0303;
+  font: Prompt;
 }
 
 .content {
@@ -31,11 +33,11 @@
 .text {
   flex: 1;
 }
-.b{
-  background-color:#ffe0e0;
+.b {
+  background-color: #ffe0e0;
 }
-.c{
-  background-color:#ffffff;
-  color:#000000;
+.c {
+  background-color: #ffffff;
+  color: #000000;
   padding: 5px;
 }
