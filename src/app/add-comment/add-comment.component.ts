@@ -15,7 +15,6 @@ export class AddCommentComponent implements OnInit {
     text: new FormControl("")
   });
   @Input() news: News;
-  imgsrc = "";
   constructor(
     private firebaseService: FirebaseService,
     private router: Router

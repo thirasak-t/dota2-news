@@ -27,7 +27,7 @@
 		<div>ที่มา: {{news.dataSource}}</div>
 	</div>
 	<div>
-		<app-add-comment></app-add-comment>
+		<app-add-comment [news]="news"></app-add-comment>
 	</div>
 	<app-display-comment></app-display-comment>
 	<div class="container" *ngFor="let cm of comment">
