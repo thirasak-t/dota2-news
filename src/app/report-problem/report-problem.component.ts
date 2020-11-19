@@ -23,7 +23,7 @@ export class ReportProblemComponent implements OnInit {
       this.form.value.topic,
       this.form.value.problem
     );
-    alert("AddComplete");
+    alert("Report Complete");
     this.router.navigate(["/"]);
   }
 }
