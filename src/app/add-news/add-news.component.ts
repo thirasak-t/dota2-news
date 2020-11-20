@@ -22,9 +22,12 @@ export class AddNewsComponent implements OnInit {
     private router: Router
   ) {
     var x = window.prompt("Password");
-    if (x != "dota2news") {
+    if (x == null) {
+      this.router.navigate(["/"]);
+    } else if (x != "dota2news") {
       alert("Wrong password");
       this.router.navigate(["/"]);
+    } else if (x == "dota2news") {
     }
   }
 
