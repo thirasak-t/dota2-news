@@ -86,7 +86,7 @@ export class DisplayComponent implements OnInit {
     if (difMinute < 60) {
       return `${difMinute} minute(s) ago.`;
     }
-    if (difHour < 60) {
+    if (difHour < 24) {
       return `${difHour} hour(s) ago.`;
     }
     if (diffDay < 7) {
