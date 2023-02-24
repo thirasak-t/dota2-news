@@ -1,4 +1,4 @@
-# Computer Skills Development Program 2020 - ES-NEWS
+# Computer Skills Development Program 2020: ES-NEWS
 
 This project was created to study web development using StackBlitz from the Computer Skills Development Program 2020, and was built within 2 days using StackBlitz, Angular, and Firebase.
 
